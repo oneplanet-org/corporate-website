@@ -100,22 +100,6 @@ a:hover {
 
 }
 
-.section-kv {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-.kv {
-    position: absolute;
-    width: 1280px;
-    height: 640px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
 /*---
 kv.css
 ---*/
@@ -553,6 +537,52 @@ kv.css
     padding: 12px 24px;
 }
 
+/* WORK: Antenna America */
+.work-antenna {
+    padding: 100px 0;
+    background: url(../img/works_antenna_bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    color: #fff;
+}
+.work-antenna .work-detail {
+    position: static;
+    width: 480px;
+}
+.work-antenna .link_normal {
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 24px;
+}
+.work-img__antenna {
+    position: absolute;
+    width: 440px;
+    right: 0;
+    top: -24px;
+}
+
+/* WORK: Art Event */
+.work-artevent {
+    padding: 100px 0;
+    background: url(../img/artevent.jpg) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    color: #fff;
+}
+.work-img__artevent {
+    width: 400px;
+}
+.work-artevent .work-detail {
+    width: 480px;
+    top: 00px;
+    right: 0;
+    font-size: 16px;
+}
+.work-artevent .link_normal {
+    border: 2px solid #fff;
+    padding: 12px 24px;
+}
+
 
 /* TEAM */
 .ul-team li {
@@ -902,14 +932,6 @@ kv.css
 @media only screen and (max-width: 1023px) {
 html, body {
     overflow-x: hidden;
-}
-.section-kv {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 480px;
-    z-index: 0;
 }
 .header {
     display: none;
@@ -1297,7 +1319,6 @@ html, body {
 
 /* WORK: KONA BEER */
 .work-kona {
-    background-color: #f7c438;
     padding: 60px 0;
 }
 .work-img__kona {
@@ -1314,6 +1335,44 @@ html, body {
     padding: 12px 24px;
 }
 
+/* WORK: Antenna America */
+.work-antenna {
+    padding: 60px 0;
+    background-size: auto 100%;
+}
+.work-antenna .work-detail {
+    width: 100%;
+    padding: 24px;
+}
+.work-antenna .link_normal {
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 24px;
+}
+.work-img__antenna {
+    position: static;
+    width: 76vw;
+    margin-left: 12vw;
+}
+
+/* WORK: Art Event */
+.work-artevent {
+    padding: 60px 0;
+    background-size: auto 100%;
+}
+.work-img__artevent {
+    position: static;
+    width: 76vw;
+    margin-left: 12vw;
+}
+.work-artevent .work-detail {
+    width: 100%;
+    padding: 24px;
+}
+.work-artevent .link_normal {
+    border: 2px solid #fff;
+    padding: 12px 24px;
+}
 
 
 
