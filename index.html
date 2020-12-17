@@ -25,7 +25,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/kv.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
-               
+
         <script src="https://kit.fontawesome.com/54d417cb89.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -83,7 +83,7 @@
                   <div class="kv-inner"></div>
                   <div class="arrows"></div>
                 </div>
-                
+
             </div>
         </div>
         <div id="top" class="opening">
@@ -124,7 +124,7 @@
                 <img class="logo_spark" src="img/spark_logo.svg">
                 <h3><b>spark studio</b> はAR時代の新しい体験を創り出すARコンテンツスタジオです。 高度なAR技術を扱うエンジニアや3Dクリエイター、デジタルマーケターが結集。ARに特化してコンテンツの企画・開発からプロモーションまでを一気通貫でトータルプロデュースします。
 
-                <a class="op_action" hret="http://sparkstudio.1planet.co.jp/" target="_blank">もっと見る</a>
+                <a class="op_action" hret="https://service.1planet.co.jp/" target="_blank">もっと見る</a>
                 </h3>
 
             </div>
@@ -199,7 +199,7 @@
                 <p>
                   「ジムマスター」は1916年に創業したカナダのファクトリーブランドです。クラシカルなスポーツウエアであるスウェットをタウンウエアとして再構築するなど、軽さや保温性、肌触りに優れたコレクションを展開することで、アウトドアフリークから絶大な支持を集めています。
                   <br><br>
-                  今回、多くの人がキャンプやアウトドアを楽しみにしていたゴールデンウィークを目の前に外出自粛となっている状況を受け、ジムマスターからどなたでも自宅でアウトドア気分を体験できる「焚き火ARフィルター」をご提供いたします。また、自宅からショッピングを楽しみたい皆さまを応援するために、ARを使ったインスタ投稿でプレゼントが当たるキャンペーンも並行して実施いたします。詳しくはジムマスターの公式Instagramをご覧ください。 
+                  今回、多くの人がキャンプやアウトドアを楽しみにしていたゴールデンウィークを目の前に外出自粛となっている状況を受け、ジムマスターからどなたでも自宅でアウトドア気分を体験できる「焚き火ARフィルター」をご提供いたします。また、自宅からショッピングを楽しみたい皆さまを応援するために、ARを使ったインスタ投稿でプレゼントが当たるキャンペーンも並行して実施いたします。詳しくはジムマスターの公式Instagramをご覧ください。
                 </p>
                 <p>
                   <a class="link_normal" href="works/gymmaster.html">もっとみる</a>
@@ -348,7 +348,7 @@
             <img class="title-contact" src="img/contact.png">
             <form id="op_form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
               <h2>お問い合わせ</h2>
-              
+
               <input type=hidden name="oid" value="00D5h000000IiDd">
               <input type=hidden name="retURL" value="https://1planet.co.jp/">
               <!--  ----------------------------------------------------------------------  -->
@@ -381,9 +381,9 @@
           <p class="op_copyright">© 2020 One Planet Inc. All rights reserved.</p>
           <a class="op_pp" href="policy.html">Privacy Policy</a>
         </footer>
-        
+
     </body>
-    
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/scrollspy.js"></script>
@@ -400,13 +400,13 @@
             // var headerHeight = 80;
             var sectionMargin = 160;
             e.preventDefault();
-         
+
             var targetEle = $(this).attr("data-scrollTarget");
             var $targetEle = $(targetEle);
             if(targetEle == '#contact') {
                 sectionMargin = -80;
             }
-         
+
             $('html, body').stop().animate({
                 'scrollTop': $targetEle.offset().top - sectionMargin
             }, 800, 'swing', function () {
@@ -425,8 +425,8 @@
         setTimeout(function(){
             $('.opening').addClass('show-tagline');
         },4000);
-        
-        
+
+
         // DEBUG: Skip Opening
         function skipOpening(){
             $('.opening-stroke').remove();
@@ -435,11 +435,11 @@
             $('.opening').addClass('show-tagline');
         }
         // skipOpening();
-        
+
 
         // Particle
         particlesJS('pjs',
-          
+
           {
             "particles": {
               "number": {
@@ -556,7 +556,7 @@
               "background_size": "cover"
             }
           }
-          
+
         );
 
         // Parallex
@@ -577,13 +577,13 @@
                 'transform'         : 'translateX(' + titleOffset + 'px)'
             });
 
-            
+
             $('.title-contact').css({
                 '-webkit-transform' : 'translateY(' + contactOffset + 'px)',
                 'transform'         : 'translateY(' + contactOffset + 'px)'
             })
 
-            
+
             $('.section-company').css({
                 'background-position' : 'center ' + companyBGOffset + 'px'
             });
@@ -628,10 +628,10 @@
         });
 
 
-        
+
     });
       //GTM
     </script>
- 
+
 <!--    <script type="text/javascript" src="js/welcome.js"></script>-->
 </html>
