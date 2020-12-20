@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="apple-mobile-web-app-capable" content="yes">
 
-        <title>ONE PLANET | ARテクノロジーで次の時代の感動体験を創る</title>
+        <title>OnePlanet: ARテクノロジーで次の時代の感動体験を創る</title>
 
         <meta property="og:type" content="article" />
         <meta property="og:title" content="OnePlanet: ARテクノロジーで次の時代の感動体験を創る" />
@@ -359,11 +359,11 @@
               <!--  ----------------------------------------------------------------------  -->
 
               <input id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="お名前" />
-              <input id="company" maxlength="80" name="company" size="20" type="text" placeholder="会社名" />
+              <input id="company_name" maxlength="80" name="company" size="20" type="text" placeholder="会社名" />
               <input id="email" maxlength="80" name="email" size="20" type="text" placeholder="メールアドレス" />
-              <textarea type="text" name="description" rows="8"  placeholder="ARの企画・開発に関するご相談はこちらからお願いいたします。その他、株式会社OnePlanetへご質問・ご要望がございましたら、お気軽にご連絡ください。"></textarea>
+              <textarea id="description" type="text" name="description" rows="8"  placeholder="ARの企画・開発に関するご相談はこちらからお願いいたします。その他、株式会社OnePlanetへご質問・ご要望がございましたら、お気軽にご連絡ください。"></textarea>
 
-              <input type=hidden name="lead_source" value="CorporateSite"/>
+              <input type="hidden" name="lead_source" value="CorporateSite"/>
               ​<input type="hidden" name="Campaign_ID" value="7015h000000xF3aAAE" />
               <input type="hidden" name="member_status" value="Responded" />
 
@@ -371,7 +371,7 @@
                 <input type="checkbox" id="agreed" name="checked" text="abc" />
                 <label for="agreed">ご提供頂く<a href="policy.html" target="_blank">個人情報の取り扱い方針</a>に同意する</label>
               </p>
-              <input type="submit" name="submit" class="form-button" value="送信する">
+              <input id="submit" type="submit" name="submit" class="form-button" value="送信する">
             </form>
           </div>
         </section>
@@ -395,16 +395,12 @@
 
         $(".nav").scrollspy({ offset: 80, animate: true });
 
-        // Scroll To
-        $('.js_scrollTo').on('click', function (e) {
-            // var headerHeight = 80;
-            var sectionMargin = 160;
-            e.preventDefault();
-
-            var targetEle = $(this).attr("data-scrollTarget");
+        function smoothScrollTo(targetEle){
             var $targetEle = $(targetEle);
             if(targetEle == '#contact') {
                 sectionMargin = -80;
+            }else{
+                sectionMargin = 40;
             }
 
             $('html, body').stop().animate({
@@ -412,6 +408,14 @@
             }, 800, 'swing', function () {
                 window.location.hash = targetEle;
             });
+        }
+        // Scroll To
+        $('.js_scrollTo').on('click', function (e) {
+            // var headerHeight = 80;
+            var sectionMargin = 160;
+            e.preventDefault();
+         
+            smoothScrollTo($(this).attr("data-scrollTarget"));
         });
 
         // Opening
@@ -574,12 +578,14 @@
 
             $('.title-service').css({
                 '-webkit-transform' : 'translateX(' + titleOffset + 'px)',
+                '-ms-transform'     : 'translateX(' + titleOffset + 'px)',
                 'transform'         : 'translateX(' + titleOffset + 'px)'
             });
 
 
             $('.title-contact').css({
                 '-webkit-transform' : 'translateY(' + contactOffset + 'px)',
+                '-ms-transform'     : 'translateY(' + contactOffset + 'px)',
                 'transform'         : 'translateY(' + contactOffset + 'px)'
             })
 
@@ -628,7 +634,76 @@
         });
 
 
+        function checkFilled(elementID) {
+            var val = $(elementID).val();
+            if(val == ''){
+              $(elementID).addClass('empty');
+              return false;
+            }else{
+              $(elementID).removeClass('empty');
+              return true;
+            }
+        }
+        function checkAgreed() {
+            if($('#agreed').hasClass('checked')) {
+              $('#agreed').removeClass('empty');
+              return true;
+            }else{
+              $('#agreed').addClass('empty');
+              return false;
+            }
+        }
+        function checkIsEmail(emailElement) {
+          emailText = $(emailElement).val()
+          var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+          if(regex.test(emailText)){
+              $(emailElement).removeClass('empty');
+              return true;
+          }else{
+              $(emailElement).addClass('empty');
+              return false;
+          }
+        }
+        $('#last_name').on('input',function(){
+            checkFilled('#last_name');
+        });
+        $('#company_name').on('input', function(){
+            checkFilled('#company_name');
+        });
+        $('#email').on('input', function(){
+            checkFilled('#email');
+            checkIsEmail('#email');
+        });
+        $('#description').on('input', function(){
+            checkFilled('#description');
+        });
+        $('#agreed').click(function(){
+            $(this).toggleClass('checked');
+            checkAgreed();
+        });
 
+        $('#op_form').on('submit', function(e){
+            var isNameFilled = checkFilled('#last_name');
+            var isCompanyFilled = checkFilled('#company_name');
+            var isEmailFilled = checkFilled('#email');
+            var isEmail = checkIsEmail('#email');
+            var isDescriptionFilled = checkFilled('#description');
+            var isAgreed = checkAgreed();
+
+            var allFilled = isNameFilled &&
+                            isCompanyFilled &&
+                            isEmailFilled &&
+                            isEmail &&
+                            isDescriptionFilled &&
+                            isAgreed;
+
+            if( !allFilled ){
+                smoothScrollTo('#op_form');
+                e.preventDefault();
+            }
+            
+        });
+      
     });
       //GTM
     </script>
