@@ -170,6 +170,29 @@
         <!-- WORKS -->
         <section id="works" class="section section-works">
           <img class="seciton-title title-service" src="img/works.svg">
+
+          <div class="work work-tbs">
+            <div class="inner">
+              <img class="work-img__tbs" src="img/works_tbs.jpg">
+              <div class="work-detail">
+                <h3>「逃げ恥」新春SPのInstgram向け ARコンテンツ</h3>
+                <h4>TBS様（テレビ局）</h4>
+                <p>
+                  2020年12月に株式会社TBSテレビ様の人気ドラマのARプロモーションにOnePlanetが採択されました。詳しくは以下のプレスリリースをご覧ください。
+                  <br><br>
+                  TBS系「逃げるは恥だが役に立つ　ガンバレ人類！新春スペシャル！！」の Instgram向け ARコンテンツを制作。ハイポリゴンになりがちなモーション付きの3Dモデルを、細部までクオリティにもこだわりながらもインスタグラムのARの容量内に収まるローポリゴンで仕上げるという3D×ARの高度なプロジェクトを手がけました。
+                  <br><br>
+                </p>
+                <p>
+                  <a class="link_normal" href="works/tbs.html">もっとみる</a>
+                  <a class="link_normal" href="[FIXME]" target="_blank">プレスリリース</a><br>
+                  <a class="link_cta js_scrollTo" data-scrollTarget="#contact">このようなARを作りたい！</a>
+                  <br><br>
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div class="work work-domino">
             <div class="inner">
               <img class="work-img__domino" src="img/works_domino_main.png">
@@ -190,6 +213,7 @@
               </div>
             </div>
           </div>
+
           <div class="work work-gymmaster">
             <div class="inner">
               <img class="work-img__gymmaster" src="img/works_gymmaster_v.jpg" style="cursor: pointer;">
@@ -208,6 +232,8 @@
               </div>
             </div>
           </div>
+
+
           <div class="work work-kona">
             <div class="inner">
               <img class="work-img__kona" src="img/works_konabeer.jpg">
@@ -319,14 +345,26 @@
                 <span class="team-title">XR Engineer</span>
               </div>
             </li>
-            <li class="team-joinus js_scrollTo" data-scrollTarget="#contact">
-              <img class="joinus-mark" src="img/joinus.svg">
-              <!-- <div class="team-name">
-                JOIN US
-              </div> -->
+            <li class="team-kaku">
+              <div class="team-detail">
+                <p class="team-intro" href="#">
+                  <img class="logomark-small" src="img/logomark_small.svg">
+                  <br>
+                  筑波大学芸術専門学群卒。大学ではアメリカ、ドイツに留学しグラフィックデザインを学ぶ。2020年卒業後、プロの3Dクリエイターのアシスタントをする傍ら、フリーランスとして3Dデザイン，映像制作全般に携わる。OnePlanetでは主にARの3DCG・企画を担当している。
+                </p>
+                <div class="team-overlay"></div>
+                <div class="team-border"></div>
+              </div>
+              <div class="team-name">
+                Kaku Misaki
+                <br>
+                <span class="team-title">3D Designer</span>
+              </div>
             </li>
           </ul>
-          <div class="clear"></div>
+          <div class="clear team-joinus">
+              <img class="joinus-mark" src="img/joinus.svg">
+          </div>
         </section>
 
         <!-- COMPANY -->
@@ -378,7 +416,7 @@
 
         <!-- FOOTER -->
         <footer class="op_footer">
-          <p class="op_copyright">© 2020 OnePlanet Inc. All rights reserved.</p>
+          <p class="op_copyright">© <span class="js_year">2020</span> OnePlanet Inc. All rights reserved.</p>
           <a class="op_pp" href="policy.html">Privacy Policy</a>
         </footer>
 
@@ -387,326 +425,7 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/scrollspy.js"></script>
-    <script>
-    $(document).ready(function(){
-        if(window.location.hash) {
-            skipOpening();
-        }
-
-        $(".nav").scrollspy({ offset: 80, animate: true });
-
-        function smoothScrollTo(targetEle){
-            var $targetEle = $(targetEle);
-            if(targetEle == '#contact') {
-                sectionMargin = -80;
-            }else{
-                sectionMargin = 40;
-            }
-
-            $('html, body').stop().animate({
-                'scrollTop': $targetEle.offset().top - sectionMargin
-            }, 800, 'swing', function () {
-                window.location.hash = targetEle;
-            });
-        }
-        // Scroll To
-        $('.js_scrollTo').on('click', function (e) {
-            // var headerHeight = 80;
-            var sectionMargin = 160;
-            e.preventDefault();
-
-            smoothScrollTo($(this).attr("data-scrollTarget"));
-        });
-
-        // Opening
-        setTimeout(function(){
-            $('.opening-stroke').fadeOut(1000);
-            $('.kvbg').removeClass('close');
-        },2500);
-        setTimeout(function(){
-            $('.header').removeClass('out');
-        },3000);
-        setTimeout(function(){
-            $('.opening').addClass('show-tagline');
-        },4000);
-
-
-        // DEBUG: Skip Opening
-        function skipOpening(){
-            $('.opening-stroke').remove();
-            $('.kvbg').removeClass('close');
-            $('.header').removeClass('out');
-            $('.opening').addClass('show-tagline');
-        }
-        // skipOpening();
-
-
-        // Particle
-        particlesJS('pjs',
-
-          {
-            "particles": {
-              "number": {
-                "value": 120,
-                "density": {
-                  "enable": true,
-                  "value_area": 800
-                }
-              },
-              "color": {
-                "value": "#fff"
-              },
-              "shape": {
-                "type": "circle",
-                "stroke": {
-                  "width": 0,
-                  "color": "#000000"
-                },
-                "polygon": {
-                  "nb_sides": 5
-                },
-                "image": {
-                  "src": "img/star.svg",
-                  "width": 100,
-                  "height": 100
-                }
-              },
-              "opacity": {
-                "value": 0.5,
-                "random": false,
-                "anim": {
-                  "enable": false,
-                  "speed": 1,
-                  "opacity_min": 0.1,
-                  "sync": false
-                }
-              },
-              "size": {
-                "value": 8,
-                "random": true,
-                "anim": {
-                  "enable": false,
-                  "speed": 40,
-                  "size_min": 4,
-                  "sync": false
-                }
-              },
-              "line_linked": {
-                "enable": true,
-                "distance": 120,
-                "color": "#ffffff",
-                "opacity": 0.4,
-                "width": 2
-              },
-              "move": {
-                "enable": true,
-                "speed": 1,
-                "direction": "none",
-                "random": true,
-                "straight": false,
-                "out_mode": "out",
-                "attract": {
-                  "enable": false,
-                  "rotateX": 600,
-                  "rotateY": 1200
-                }
-              }
-            },
-            "interactivity": {
-              "detect_on": "canvas",
-              "events": {
-                "onhover": {
-                  "enable": false,
-                  "mode": "repulse"
-                },
-                "onclick": {
-                  "enable": false,
-                  "mode": "push"
-                },
-                "resize": true
-              },
-              "modes": {
-                "grab": {
-                  "distance": 400,
-                  "line_linked": {
-                    "opacity": 1
-                  }
-                },
-                "bubble": {
-                  "distance": 400,
-                  "size": 40,
-                  "duration": 2,
-                  "opacity": 8,
-                  "speed": 3
-                },
-                "repulse": {
-                  "distance": 200
-                },
-                "push": {
-                  "particles_nb": 4
-                },
-                "remove": {
-                  "particles_nb": 2
-                }
-              }
-            },
-            "retina_detect": true,
-            "config_demo": {
-              "hide_card": false,
-              "background_color": "#b61924",
-              "background_image": "",
-              "background_position": "50% 50%",
-              "background_repeat": "no-repeat",
-              "background_size": "cover"
-            }
-          }
-
-        );
-
-        // Parallex
-        $(window).scroll(function(){
-            var scroll = $(window).scrollTop();
-            var titleOffset = scroll/10;
-            var contactOffset = scroll/15;
-            var companyBGOffset = scroll/3;
-
-            if( window.innerWidth < 1024 ) {
-                var titleOffset = scroll/25;
-                var contactOffset = scroll/35;
-                var companyBGOffset = scroll/8;
-            }
-
-            $('.title-service').css({
-                '-webkit-transform' : 'translateX(' + titleOffset + 'px)',
-                '-ms-transform'     : 'translateX(' + titleOffset + 'px)',
-                'transform'         : 'translateX(' + titleOffset + 'px)'
-            });
-
-
-            $('.title-contact').css({
-                '-webkit-transform' : 'translateY(' + contactOffset + 'px)',
-                '-ms-transform'     : 'translateY(' + contactOffset + 'px)',
-                'transform'         : 'translateY(' + contactOffset + 'px)'
-            })
-
-
-            $('.section-company').css({
-                'background-position' : 'center ' + companyBGOffset + 'px'
-            });
-
-            // SP Scroll Events
-            if( scroll > 350 ){
-                $('.sp_logo').addClass('show');
-            } else {
-                $('.sp_logo').removeClass('show');
-            }
-        });
-
-        function openMenu(){
-            $('.sp_menu').addClass('open');
-            $('.sp_header').addClass('open');
-            $('html, body').css({ 'overflow-y': 'hidden'});
-            $('.sp_nav').addClass('open');
-        }
-        function closeMenu(){
-            $('.sp_menu').removeClass('open');
-            $('.sp_header').removeClass('open');
-            $('html, body').css({ 'overflow-y': 'scroll'});
-            $('.sp_nav').removeClass('open');
-        }
-        // SP Triggers
-        $('.sp_menu').click(function(){
-            if($(this).hasClass('open')){
-              closeMenu();
-            }else{
-              openMenu();
-            }
-        });
-
-        $('.sp_nav a').click(function(){
-            href = $(this).attr('hret');
-            $('.nav a[href="'+href+'"]').trigger('click');
-            closeMenu();
-        });
-
-        $('.work-img__gymmaster').click(function(){
-            window.open('https://youtu.be/xVuwSPxQiFI', '_blank');
-        });
-
-
-        function checkFilled(elementID) {
-            var val = $(elementID).val();
-            if(val == ''){
-              $(elementID).addClass('empty');
-              return false;
-            }else{
-              $(elementID).removeClass('empty');
-              return true;
-            }
-        }
-        function checkAgreed() {
-            if($('#agreed').hasClass('checked')) {
-              $('#agreed').removeClass('empty');
-              return true;
-            }else{
-              $('#agreed').addClass('empty');
-              return false;
-            }
-        }
-        function checkIsEmail(emailElement) {
-          emailText = $(emailElement).val()
-          var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-          if(regex.test(emailText)){
-              $(emailElement).removeClass('empty');
-              return true;
-          }else{
-              $(emailElement).addClass('empty');
-              return false;
-          }
-        }
-        $('#last_name').on('input',function(){
-            checkFilled('#last_name');
-        });
-        $('#company_name').on('input', function(){
-            checkFilled('#company_name');
-        });
-        $('#email').on('input', function(){
-            checkFilled('#email');
-            checkIsEmail('#email');
-        });
-        $('#description').on('input', function(){
-            checkFilled('#description');
-        });
-        $('#agreed').click(function(){
-            $(this).toggleClass('checked');
-            checkAgreed();
-        });
-
-        $('#op_form').on('submit', function(e){
-            var isNameFilled = checkFilled('#last_name');
-            var isCompanyFilled = checkFilled('#company_name');
-            var isEmailFilled = checkFilled('#email');
-            var isEmail = checkIsEmail('#email');
-            var isDescriptionFilled = checkFilled('#description');
-            var isAgreed = checkAgreed();
-
-            var allFilled = isNameFilled &&
-                            isCompanyFilled &&
-                            isEmailFilled &&
-                            isEmail &&
-                            isDescriptionFilled &&
-                            isAgreed;
-
-            if( !allFilled ){
-                smoothScrollTo('#op_form');
-                e.preventDefault();
-            }
-
-        });
-
-    });
-      //GTM
-    </script>
+    <script src="js/main.js"></script>
 
 <!--    <script type="text/javascript" src="js/welcome.js"></script>-->
 </html>
