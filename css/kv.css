@@ -379,8 +379,8 @@
 }
 .tagline {
 	width: 610px;
-	text-align: justify;
-	font-size: 27px;
+	text-align: center;
+	font-size: 26px;
 	font-weight: 600;
 	letter-spacing: 3px;
 	opacity: 0;

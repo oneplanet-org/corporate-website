@@ -261,7 +261,7 @@ kv.css
 }
 .service-block {
     position: relative;
-    width: 50vw;
+    width: 50%;
     height: 50vw;
     background-color: #ffcc00;
     float: left;
@@ -637,6 +637,28 @@ kv.css
     margin-bottom: 24px;
 }
 
+/* WORK: TBS */
+.work-tbs {
+    padding: 120px 0;
+    background: url(../img/works_tbs_bg.jpg);
+    color: #fff;
+}
+.work-tbs .work-detail {
+    position: static;
+    width: 480px;
+}
+.work-tbs .link_normal {
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 24px;
+}
+.work-img__tbs {
+    position: absolute;
+    width: 400px;
+    right: 0;
+    top: -60px;
+}
+
 /* WORK: DOMINO */
 .work-domino {
     background: url(../img/works_domino_bg.jpg);
@@ -768,15 +790,49 @@ kv.css
             transform: translateY(10vw);
     background: url(../img/team_tokuyama.png);
 }
-.team-joinus {
+.team-kaku {
     -webkit-transform: translateY(3vw);
         -ms-transform: translateY(3vw);
             transform: translateY(3vw);
+    background: url(../img/team_kaku.jpg);
+}
+.team-joinus {
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 48vw;
+    width: 240px;
+    height: 240px;
+    transform: translateY(3vw);
     background-color: #eb5757;
     -webkit-box-shadow: inset 0 0 0 .8vw #eb5757;
             box-shadow: inset 0 0 0 .8vw #eb5757;
     cursor: pointer;
+    border-radius: 120px;
+    -webkit-animation: ctaHover 1s infinite;
+            animation: ctaHover 1s infinite;
 }
+.joinus-mark {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+        -ms-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.team-joinus:hover .joinus-mark {
+    -webkit-transform: translate(-50%, -50%) scale(1.2);
+        -ms-transform: translate(-50%, -50%) scale(1.2);
+            transform: translate(-50%, -50%) scale(1.2);
+    -webkit-transition: all .5s cubic-bezier(.5,0,.5,1.5);
+    -o-transition: all .5s cubic-bezier(.5,0,.5,1.5);
+    transition: all .5s cubic-bezier(.5,0,.5,1.5);
+}   
+
 
 .team-name {
     position: absolute;
@@ -794,10 +850,6 @@ kv.css
     line-height: 2;
     font-size: 1.2vw;
 }
-.team-joinus .team-name {
-    text-align: center;
-    bottom: -3vw;
-} 
 .team-detail {
     position: absolute;
     width: 100%;
@@ -878,27 +930,6 @@ kv.css
     transition: all .5s;
 }
 
-.joinus-mark {
-    position: absolute;
-    width: 17vw;
-    height: 17vw;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%) scale(.7);
-        -ms-transform: translate(-50%, -50%) scale(.7);
-            transform: translate(-50%, -50%) scale(.7);
-    -webkit-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
-}
-.team-joinus:hover .joinus-mark {
-    -webkit-transform: translate(-50%, -50%) scale(.88);
-        -ms-transform: translate(-50%, -50%) scale(.88);
-            transform: translate(-50%, -50%) scale(.88);
-    -webkit-transition: all .5s cubic-bezier(.5,0,.5,1.5);
-    -o-transition: all .5s cubic-bezier(.5,0,.5,1.5);
-    transition: all .5s cubic-bezier(.5,0,.5,1.5);
-}   
 
 
 
@@ -914,7 +945,7 @@ kv.css
     height: 320px;
     background-size: 100% auto;
     z-index: 100;
-    margin-top: 30vw;
+    margin-top: 10vw;
     padding-top: 0;
     background-position: center -100px;
 }
@@ -1616,6 +1647,28 @@ html, body {
     margin-bottom: 24px;
 }
 
+/* WORK: TBS */
+.work-tbs {
+    padding: 60px 0;
+    background-size: auto 100%;
+}
+.work-tbs .work-detail {
+    position: static;
+    width: 100%;
+    padding: 24px;
+}
+.work-tbs .link_normal {
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 24px;
+}
+.work-img__tbs {
+    position: static;
+    width: 76vw;
+    margin-left: 12vw;
+    top: 0px;
+}
+
 /* WORK: DOMINO */
 .work-domino {
     background: url(../img/works_domino_bg.jpg);
@@ -1723,6 +1776,7 @@ html, body {
     background-size: 100% auto;
     background-position: center;
     margin-bottom: 0px;
+    float: none;
 }
 .team-murakami {
     -webkit-transform: translateY(0vw);
@@ -1747,6 +1801,7 @@ html, body {
     -webkit-box-shadow: inset 0 0 0 .8vw #eb5757;
             box-shadow: inset 0 0 0 .8vw #eb5757;
     cursor: pointer;
+    margin-top: 120px;
 }
 
 .team-name {
@@ -1762,10 +1817,6 @@ html, body {
     line-height: 2;
     font-size: 2.4vw;
 }
-.team-joinus .team-name {
-    text-align: center;
-    bottom: -3vw;
-} 
 .team-detail {
     display: none;
 }
@@ -1804,25 +1855,6 @@ html, body {
     -o-transition: all .5s;
     transition: all .5s;
 }
-
-.joinus-mark {
-    position: absolute;
-    width: 68vw;
-    height: 68vw;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%) scale(.7);
-        -ms-transform: translate(-50%, -50%) scale(.7);
-            transform: translate(-50%, -50%) scale(.7);
-    -webkit-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
-}
-.team-joinus:hover .joinus-mark {
-    -webkit-transform: translate(-50%, -50%) scale(.88);
-        -ms-transform: translate(-50%, -50%) scale(.88);
-            transform: translate(-50%, -50%) scale(.88);
-}   
 
 
 
