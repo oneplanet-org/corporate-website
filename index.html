@@ -29,9 +29,6 @@
 
         <script src="https://kit.fontawesome.com/54d417cb89.js" crossorigin="anonymous"></script>
         <script src="https://www.google.com/recaptcha/api.js"></script>
-        <script>
-          function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
-        </script>
     </head>
     <body>
         <div class="opening-stroke">
@@ -415,8 +412,9 @@
                 <input type="checkbox" id="agreed" name="checked" text="abc" />
                 <label for="agreed">ご提供頂く<a href="policy.html" target="_blank">個人情報の取り扱い方針</a>に同意する</label>
               </p><br>
-              <div class="g-recaptcha" data-sitekey="6LcL9xIaAAAAACMVvZZc4fRuJWoZ6ZGCI5qCmQwJ"></div><br>
-              <input id="submit" type="submit" name="submit" class="form-button" value="送信する">
+              <div class="g-recaptcha" data-sitekey="6LcL9xIaAAAAACMVvZZc4fRuJWoZ6ZGCI5qCmQwJ"></div>
+              <p id="recaptcha-warning">送信するにはチェックを入れてください。</p><br>
+              <button id="submit" type="submit" name="submit" class="form-button" disabled>送信する</button>
             </form>
           </div>
         </section>
@@ -428,6 +426,18 @@
         </footer>
 
     </body>
+
+    <script>
+      function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
+      var verifyCallback = function(response) {
+        document.getElementById("warning").textContent = '';
+        document.getElementById("send").disabled = false;
+      };
+      var expiredCallback = function() {
+        document.getElementById("warning").textContent = '送信するにはチェックを入れてください';
+        document.getElementById("send").disabled = true;
+      };
+    </script>
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/particles.min.js"></script>
