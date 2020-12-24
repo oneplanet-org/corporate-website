@@ -28,6 +28,10 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
 
         <script src="https://kit.fontawesome.com/54d417cb89.js" crossorigin="anonymous"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script>
+          function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
+        </script>
     </head>
     <body>
         <div class="opening-stroke">
@@ -390,6 +394,7 @@
 
               <input type=hidden name="oid" value="00D5h000000IiDd">
               <input type=hidden name="retURL" value="https://1planet.co.jp/thanks.html">
+              <input type=hidden name='captcha_settings' value='{"keyname":"recapcha","fallback":"true","orgId":"00D5h000000IiDd","ts":""}'>
               <!--  ----------------------------------------------------------------------  -->
               <!--  注意: これらの項目は、省略可能なデバッグ用要素です。デバッグモードでテストを行う場合は、これらの行をコメント解除してください。        -->
               <!--  <input type="hidden" name="debug" value=1>                              -->
@@ -409,7 +414,8 @@
               <p class="checkbox">
                 <input type="checkbox" id="agreed" name="checked" text="abc" />
                 <label for="agreed">ご提供頂く<a href="policy.html" target="_blank">個人情報の取り扱い方針</a>に同意する</label>
-              </p>
+              </p><br>
+              <div class="g-recaptcha" data-sitekey="6LcL9xIaAAAAACMVvZZc4fRuJWoZ6ZGCI5qCmQwJ"></div><br>
               <input id="submit" type="submit" name="submit" class="form-button" value="送信する">
             </form>
           </div>
