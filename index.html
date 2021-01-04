@@ -173,6 +173,29 @@
         <section id="works" class="section section-works">
           <img class="seciton-title title-service" src="img/works.svg">
 
+          <div class="work work-gymmaster-game">
+            <div class="inner">
+              <img class="work-img__gymmaster-game" src="img/works_gymmaster_game.png">
+              <div class="work-detail">
+                <h3>Get Wrestlers AR by gymmaster</h3>
+                <h4>株式会社グランド・ワン様（（アパレル）</h4>
+                <p>
+                  2020年12月に株式会社グランド・ワン様が展開されるアウトドアフリークに人気のカナダ発アパレルブランド「ジムマスター」公式Instagramにて、3D×ARゲームをリリースいたしました。
+                  <br><br>
+                  カラフルな色合いをしたコイン型のレスラーをタップすることで得点をGET、ハイスコアを競うという形式のゲームに決定して開発を進めていきました。試行錯誤を重ねた結果、12秒と短い時間制限の中で得点を競って楽しめる形でARゲームを開発しました。
+                  <br><br>
+
+                </p>
+                <p>
+                  <a class="link_normal" href="works/gymmaster_game.html">もっとみる</a>
+                  <a class="link_normal" href="https://prtimes.jp/main/html/rd/p/000000021.000049853.html" target="_blank">プレスリリース</a><br>
+                  <a class="link_cta js_scrollTo" data-scrollTarget="#contact">このようなARを作りたい！</a>
+                  <br><br>
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div class="work work-tbs">
             <div class="inner">
               <img class="work-img__tbs" src="img/works_tbs.jpg">
@@ -412,9 +435,9 @@
                 <input type="checkbox" id="agreed" name="checked" text="abc" />
                 <label for="agreed">ご提供頂く<a href="policy.html" target="_blank">個人情報の取り扱い方針</a>に同意する</label>
               </p><br>
-              <!-- <div class="g-recaptcha" data-sitekey="6LcL9xIaAAAAACMVvZZc4fRuJWoZ6ZGCI5qCmQwJ"></div> -->
-              <!-- <p id="recaptcha-warning">送信するにはチェックを入れてください。</p><br> -->
-              <input id="submit" type="submit" name="submit" class="form-button" value="送信する">
+              <div class="g-recaptcha" data-callback="clearcall" data-sitekey="6LcL9xIaAAAAACMVvZZc4fRuJWoZ6ZGCI5qCmQwJ"></div>
+              <p id="recaptcha-warning">送信するにはチェックを入れてください。</p><br>
+              <input id="submit" type="submit" name="submit" class="form-button" value="送信する" disabled>
             </form>
           </div>
         </section>
@@ -424,6 +447,14 @@
           <p class="op_copyright">© <span class="js_year">2020</span> OnePlanet Inc. All rights reserved.</p>
           <a class="op_pp" href="policy.html">Privacy Policy</a>
         </footer>
+
+        <script type="text/javascript">
+        	function clearcall(code) {
+        		if(code !== ""){
+        			$(':submit[name=button]').removeAttr("disabled");
+        		}
+        	}
+        </script>
 
     </body>
 

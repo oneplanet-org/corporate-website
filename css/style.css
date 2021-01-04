@@ -7,9 +7,9 @@ body {
 a {
     text-decoration: underline;
     padding: 0 4px;
-    cursor: pointer; 
-    -webkit-transition: color .3s; 
-    -o-transition: color .3s; 
+    cursor: pointer;
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
     transition: color .3s;
 }
 a:hover {
@@ -720,6 +720,27 @@ kv.css
     padding: 12px 24px;
 }
 
+/* WORK: KONA BEER */
+.work-gymmaster-game {
+    background-color: rgba(255,255,255,.95);;
+    padding: 80px;
+}
+.work-img__gymmaster-game {
+    width: 400px;
+}
+.work-gymmaster-game .work-detail {
+    width: 480px;
+    top: 00px;
+    right: 0;
+    color: #111;
+    font-size: 16px;
+}
+.work-gymmaster-game .link_normal {
+    color: #111;
+    border: 2px solid #111;
+    padding: 12px 24px;
+}
+
 /* WORK: Antenna America */
 .work-antenna {
     padding: 100px 0;
@@ -831,7 +852,7 @@ kv.css
     -webkit-transition: all .5s cubic-bezier(.5,0,.5,1.5);
     -o-transition: all .5s cubic-bezier(.5,0,.5,1.5);
     transition: all .5s cubic-bezier(.5,0,.5,1.5);
-}   
+}
 
 
 .team-name {
@@ -1002,7 +1023,7 @@ kv.css
     font-weight: 600;
 }
 #op_form {
-    padding-bottom: 320px; 
+    padding-bottom: 320px;
 }
 #op_form [type="text"],
 #op_form [type="email"],
@@ -1922,7 +1943,7 @@ html, body {
     font-weight: 600;
 }
 #op_form {
-    padding-bottom: 240px; 
+    padding-bottom: 240px;
 }
 #op_form [type="text"],
 #op_form [type="email"],
@@ -2027,30 +2048,3 @@ html, body {
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
