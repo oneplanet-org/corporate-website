@@ -795,27 +795,22 @@ kv.css
     height: 33vw;
     background-size: 100% auto;
     float: left;
+    margin-bottom: 6vw;
 }
 .team-murakami {
-    -webkit-transform: translateY(5vw);
-        -ms-transform: translateY(5vw);
-            transform: translateY(5vw);
     background: url(../img/team_murakami.png);
 }
 .team-ivan {
     background: url(../img/team_ivan.png);
 }
 .team-tokuyama {
-    -webkit-transform: translateY(10vw);
-        -ms-transform: translateY(10vw);
-            transform: translateY(10vw);
     background: url(../img/team_tokuyama.png);
 }
 .team-kaku {
-    -webkit-transform: translateY(3vw);
-        -ms-transform: translateY(3vw);
-            transform: translateY(3vw);
     background: url(../img/team_kaku.jpg);
+}
+.team-kimura {
+    background: url(../img/team_kimura.jpg);
 }
 .team-joinus {
     margin-left:auto;
