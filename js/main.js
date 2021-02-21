@@ -35,6 +35,7 @@ $(document).ready(function(){
     },2500);
     setTimeout(function(){
         $('.header').removeClass('out');
+        $('.sns').removeClass('out');
     },3000);
     setTimeout(function(){
         $('.opening').addClass('show-tagline');
@@ -46,6 +47,7 @@ $(document).ready(function(){
         $('.opening-stroke').remove();
         $('.kvbg').removeClass('close');
         $('.header').removeClass('out');
+        $('.sns').removeClass('out');
         $('.opening').addClass('show-tagline');
     }
     // skipOpening();
