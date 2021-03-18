@@ -270,10 +270,10 @@ $(document).ready(function(){
     }
     function checkRecapture() {
         if(grecaptcha.getResponse().length == 0) {
-          $('#agreed').addClass('empty');
+          $('#recapure').addClass('empty');
           return false;
         }else{
-          $('#agreed').removeClass('empty');
+          $('#recapure').removeClass('empty');
           return true;
         }
     }
