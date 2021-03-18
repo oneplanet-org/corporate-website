@@ -29,6 +29,20 @@
 
         <script src="https://kit.fontawesome.com/54d417cb89.js" crossorigin="anonymous"></script>
         <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script>
+         function timestamp() { 
+            var response = document.getElementById("g-recaptcha-response"); 
+            if (response == null || response.value.trim() == "") {
+                var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);
+                elems["ts"] = JSON.stringify(new Date().getTime());
+                document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); 
+            } 
+            } setInterval(timestamp, 500);
+
+         function callValidation() {
+
+         }
+        </script>
     </head>
     <body>
         <div class="opening-stroke">
@@ -449,9 +463,10 @@
         <section id="contact" class="section section-contact">
           <div class="inner">
             <img class="title-contact" src="img/contact.png">
-            <form id="op_form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
               <h2>お問い合わせ</h2>
 
+              <input type=hidden name='captcha_settings' value='{"keyname":"recapchaVer2","fallback":"true","orgId":"00D5h000000IiDd","ts":""}'>
               <input type=hidden name="oid" value="00D5h000000IiDd">
               <input type=hidden name="retURL" value="https://1planet.co.jp/thanks.html">
               <!--  ----------------------------------------------------------------------  -->
@@ -467,13 +482,16 @@
               <textarea id="description" type="text" name="description" rows="8"  placeholder="ARの企画・開発に関するご相談はこちらからお願いいたします。その他、株式会社OnePlanetへご質問・ご要望がございましたら、お気軽にご連絡ください。"></textarea>
 
               <input type="hidden" name="lead_source" value="CorporateSite"/>
-              ​<input type="hidden" name="Campaign_ID" value="7015h000000xF3aAAE" />
+              <input type="hidden" name="Campaign_ID" value="7015h000000xF3aAAE" />
               <input type="hidden" name="member_status" value="Responded" />
 
               <p class="checkbox">
                 <input type="checkbox" id="agreed" name="checked" text="abc" />
                 <label for="agreed">ご提供頂く<a href="policy.html" target="_blank">個人情報の取り扱い方針</a>に同意する</label>
-              </p><br>
+              </p>
+              <br>
+              <div class="g-recaptcha" data-sitekey="6LcL9xIaAAAAACMVvZZc4fRuJWoZ6ZGCI5qCmQwJ"></div><br>
+              <br>
               <input id="submit" type="submit" name="submit" class="form-button" value="送信する">
             </form>
           </div>
