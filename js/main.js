@@ -313,6 +313,9 @@ $(document).ready(function(){
         var isEmail = checkIsEmail('#email');
         var isDescriptionFilled = checkFilled('#description');
         var isAgreed = checkAgreed();
+        var isCheckedRecapture = checkRecapture();
+        
+        console.log(isCheckedRecapture);
 
         var allFilled = isNameFilled &&
                         isCompanyFilled &&
@@ -320,7 +323,7 @@ $(document).ready(function(){
                         isEmail &&
                         isDescriptionFilled &&
                         isAgreed &&
-                        checkRecapture;
+                        isCheckedRecapture;
 
         if( !allFilled ){
             smoothScrollTo('#op_form');
