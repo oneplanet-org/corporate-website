@@ -1048,6 +1048,9 @@ kv.css
     font-size: 32px;
     font-weight: 600;
 }
+.empty{
+    border: 4px solid #eb5757;
+}
 #op_form {
     padding-bottom: 320px;
 }
