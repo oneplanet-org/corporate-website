@@ -268,6 +268,15 @@ $(document).ready(function(){
           return false;
         }
     }
+    function checkRecapture() {
+        if(grecaptcha.getResponse().length == 0) {
+          $('#agreed').addClass('empty');
+          return false;
+        }else{
+          $('#agreed').removeClass('empty');
+          return true;
+        }
+    }
     function checkIsEmail(emailElement) {
       emailText = $(emailElement).val()
       var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -310,7 +319,8 @@ $(document).ready(function(){
                         isEmailFilled &&
                         isEmail &&
                         isDescriptionFilled &&
-                        isAgreed;
+                        isAgreed &&
+                        checkRecapture;
 
         if( !allFilled ){
             smoothScrollTo('#op_form');
