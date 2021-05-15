@@ -1491,7 +1491,7 @@ html, body {
 .service-block {
     position: relative;
     width: 100vw;
-    height: 150vw;
+    height: 170vw;
     float: none;
 }
 
@@ -1525,7 +1525,7 @@ html, body {
     background-size: 100vw, 100vw;
 }
 .sb-consulting {
-    background-size: 150vw, 150vw;
+    background-size: 170vw, 170vw;
 }
 
 .sb-aml {

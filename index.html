@@ -30,13 +30,13 @@
         <script src="https://kit.fontawesome.com/54d417cb89.js" crossorigin="anonymous"></script>
         <script src="https://www.google.com/recaptcha/api.js"></script>
         <script>
-         function timestamp() { 
-            var response = document.getElementById("g-recaptcha-response"); 
+         function timestamp() {
+            var response = document.getElementById("g-recaptcha-response");
             if (response == null || response.value.trim() == "") {
                 var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);
                 elems["ts"] = JSON.stringify(new Date().getTime());
-                document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); 
-            } 
+                document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems);
+            }
             } setInterval(timestamp, 500);
 
          function callValidation() {
@@ -161,8 +161,8 @@
                 </div>
                 <h3>
 
-                  <b>AR技術を活用した新規サービスのご提案</b><br>
-                  テクノロジーを掛け合わせて自社のアセットを有効活用したい企業や、新しい消費者体験を導入したいストア事業者/商業施設に向けて、AR技術及びARグラスを活用したアプリケーション開発をご提供します。
+                  <b>AR技術を活用したDX推進/新規サービスの開発支援</b><br>
+                  先端テクノロジーを掛け合わせて自社のアセットを有効活用したい企業様や、新しい消費者体験を導入したいストア事業者様/商業施設様等に向けて、AR技術やMRグラスを活用した新しいソリューションをご提供。PoC段階から一緒に企画を設計し、開発、テスト、ローンチおよび、その後の効果検証までをワンストップでご支援、貴社のイノベーションを推進いたします。
 
                 <a class="op_action js_scrollTo" href="https://studio.1planet.co.jp/" target="_blank" data-scrollTarget="#contact">無料お問い合わせ</a>
                 </h3>
