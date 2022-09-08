@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="author" content="MoQ">
+        <meta name="keywords" content="Oneplanet, OnePlanet, AR, Augument Reality, Spark Studio">
+        <meta name="description" content="OnePlanetは、AR技術を活用した様々なソリューションを提供するテクノロジースタートアップ企業です。ARグラスを活用した新しいカスタマーエクスペリエンスの開発や、自宅でも展示会を行えるようにするAR体験、スタッフのオペレーション負荷を抑えたストアへのAR導入、InstagramのARエフェクト開発など、ARを活用した様々なサービス/DXソリューションを展開しています。創業以来、幅広い業界のクライアントへARサービスを展開しており、ARを活用したあらゆる課題解決のためにプロジェクトの企画からARの開発・導入までをワンストップで提供しています">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <title>OnePlanet XR Consulting | XRコンサルティング</title>
+
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="XR技術で新たな事業を創出" />
+        <meta property="og:image" content="https://1planet.co.jp/ogp_xr.png" />
+        <meta property="og:url" content="https://1planet.co.jp/xrconsulting.html" />
+        <meta property="og:site_name" content="OnePlanet XR" />
+        <meta property="og:description" content="「OnePlanet XR」はAR/MR技術に専門特化したコンサルティングサービスです。豊富な実績を元に、AR/MR技術を活用した新たな事業の立ち上げ支援や、社内業務のデジタル化/DX推進など、貴社の必要とするイノベーションを実現いたします。" />
+
+        <link rel="icon" href="images/xricon.png">
+        <link rel="apple-touch-icon" href="images/xricon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/xricon.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/xricon.png">
+
+        <link href="/stylesheets/reset.css" rel="stylesheet" />
+        <link href="/stylesheets/consulting.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+
+        <script src="/javascripts/jquery-3.2.1.min.js"></script>
+        <script src="/javascripts/cssparticles.js"></script>
+        <script src="/javascripts/scrollspy.js"></script>
+        <script src="/javascripts/consulting.js"></script>
+
+        <script src="https://kit.fontawesome.com/54d417cb89.js" crossorigin="anonymous"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script>
+         function timestamp() {
+            var response = document.getElementById("g-recaptcha-response");
+            if (response == null || response.value.trim() == "") {
+                var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);
+                elems["ts"] = JSON.stringify(new Date().getTime());
+                document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems);
+            }
+            } setInterval(timestamp, 500);
+
+         function callValidation() {
+
+         }
+        </script>
+        <script type="text/javascript" >
+          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+          ga('create', 'UA-124333635-1', 'auto');
+          // Plugins
+          ga('send', 'pageview');
+          </script>
+    </head>
+    <body>
+        <!--HEADER-->
+        <img class="bar out" src="images/consulting/bar.svg">
+        <header class="header-sp out">
+          <img class="logo-sp" src="images/consulting/xrlogo.svg">
+          <a class="cta-sp btn js_scrollTo" data-scrollTarget="#contact">
+            お問い合わせ
+          </a>
+        </header>
+        <aside class="navlist out">
+          <ul class="nav">
+            <li data-scrollTarget="#kv"><a href="#kv"><div class="logo">
+              OnePlanet XRコンサルティング
+            </div></a></li>
+            <li data-scrollTarget="#pain"><a href="#pain"><div>Pain of client</div><span>頂いてきたご相談</span></a></li>
+            <li data-scrollTarget="#feature"><a href="#feature"><div>Feature</div><span>4つの特徴</span></a></li>
+            <li data-scrollTarget="#solution"><a href="#solution"><div>Solution</div><span>開発実績</span></a></li>
+            <li data-scrollTarget="#blog"><a href="#blog"><div>XR Blog</div><span>技術ブログ</span></a></li>
+            <li data-scrollTarget="#process"><a href="#process"><div>Process</div><span>コンサルティングの流れ</span></a></li>
+            <li data-scrollTarget="#contact"><a href="#contact"><div>Contact</div><span>お問い合わせ</span></a></li>
+          </ul>
+        </aside>
+        <main class="content out">
+          <section id="kv" class="section kv">
+            <h1>
+              <img src="images/consulting/longlogo.svg">
+              <span>XR技術で新たな事業を創出</span>
+            </h1>
+            <p>
+                「OnePlanet XR」はAR/MR技術に専門特化したコンサルティングサービスです。<br>
+                豊富な実績を元に、AR/MR技術を活用した新たな事業の立ち上げ支援や、<br>
+                社内業務のデジタル化/DX推進など、<br>
+                貴社の必要とするイノベーションを実現いたします。
+            </p>
+            <a class="btn cta js_scrollTo" data-scrollTarget="#contact">
+              お問い合わせ
+            </a>
+              <div id="scene">
+                <div id="emitter"></div>
+              </div>
+          </section>
+          <section id="pain" class="section pain">
+            <h2>実際に頂いてきたご相談</h2>
+            <div class="pain-card">
+              <img src="images/consulting/client1.png">
+              <h3>大手建材メーカー<br>R&Dグループ リーダー様</h3>
+              <p>
+                  ARは数年前から<em>現場の作業効率化</em>と<em>エンドユーザー向けの新体験創出の両面</em>で検討したこともあったけど、<em class="em">実際に導入して効果に繋がるイメージが持てなかった</em>ので優先順位が上がらず、結局は導入に至ってない。
+              </p>
+            </div>
+            <div class="pain-card">
+              <img src="images/consulting/client2.png">
+              <h3>大手新聞社<br>新規ビジネス開発室 責任者様</h3>
+              <p>
+                  自社のアセットを有効活用した新規事業のアイデアを模索する中で、ARは数年前から使えそうな技術の1つとして認識はしているものの、<em>効果的に活用できるのかいまいちピンと来ておらず、<em class="em">より具体的な活用方法</em>を知りたい</em>。
+              </p>
+            </div>
+            <div class="pain-card">
+              <img src="images/consulting/client3.png">
+              <h3>大手エンタメ系企業<br>イノベーション推進室 室長様</h3>
+              <p>
+                  自社のアセットを有効活用した新規事業の創出を目的として実際にARアプリを開発したこともあり、面白い体験の創出はできたが、<em>効果を得られたのか見えなかった。</em>単に面白い技術を提供するだけでなく、<em class="em">効果検証や導入後の事業化/収益化までサポートしてもらえるパートナー</em>を探している。
+              </p>
+            </div>
+            <div class="pain-card">
+              <img src="images/consulting/client4.png">
+              <h3>大手不動産デベロッパー<br>経営企画部 マネージャー様</h3>
+              <p>
+                  物件や街の利用者の体験をより良くする方法を考える中で、不動産とARの組み合わせに興味がある。物件/設備の管理効率化、模型/資料のAR化、テナント/利用者へのサービス提供等、<em class="em">幅広い可能性の中でベストなソリューションを一緒に選定し、実証実験を進められるパートナーを探している。</em>
+              </p>
+            </div>
+          </section>
+          <section id="feature" class="section feature">
+            <h2>「OnePlanet XR」4つの特徴</h2>
+            <p class="section-desc">AR/MR技術を活用した新規プロジェクトを実現するパートナーとして、<br>設計〜実用化までワンストップでご支援</p>
+            <div class="feature-wrapper">
+              <div class="feature-card">
+                <img src="images/consulting/feature1.svg">
+                <h3>XR領域の高い技術力</h3>
+                <p>LiDARやVPSなど高度な空間スキャン技術を活用したスマホベースのAR体験から、MRグラスを空間体験まで、AR/MR技術に専門特化して幅広い導入実績があります。</p>
+              </div>
+              <div class="feature-card">
+                <img src="images/consulting/feature2.svg">
+                <h3>高い実用性</h3>
+                <p>単に技術を活用したデモアプリを作って終わりにせず、現場へ足を運んでの実用性検証や、β版・本番用アプリケーションの開発、リリース後の効果検証・データ分析までワンストップでサポートします。</p>
+              </div>
+              <div class="feature-card">
+                <img src="images/consulting/feature3.svg">
+                <h3>導入コスト</h3>
+                <p>高額になりやすいR&DやPoCのプロジェクトにおいて、スタート時の要件をミニマムな設計にし、まずは安価に実用性を検証、その結果次第で徐々にプロジェクト規模を拡大していくことが可能です。</p>
+              </div>
+              <div class="feature-card">
+                <img src="images/consulting/feature4.svg">
+                <h3>アセットの有効活用</h3>
+                <p>自社アセットとXR技術を組み合わせた貴社ならではの新規事業の企画を一緒にプランニング。要件定義・開発・保守・運用までワンストップで実施可能です。</p>
+              </div>
+              <div class="clear"></div>
+            </div>
+
+          </section>
+          <section id="solution" class="section solution">
+            <h2>先端技術を活用したアプリケーション 開発実績</h2>
+            <a class="solution-card" target="_blank" href="https://www.youtube.com/watch?v=CocyKF_4Wsk">
+              <div class="solution-thumbnail st1"></div>
+              <h3>MRグラスを活用した3Dモデル設置シミュレーション</h3>
+              <p>新築住宅の建設やリフォーム工事など、住宅設備を設置する建築現場では1つのミスでも致命的な問題になります。そこで、MRグラスで現場に実寸大の3Dモデルを現場に表示させてミスを削減するシミュレーターを開発、提供しました。</p>
+              <img src="images/consulting/play.svg">
+            </a>
+            <a class="solution-card" target="_blank" href="https://www.youtube.com/watch?v=wckDi4Rll3Y">
+              <div class="solution-thumbnail st2"></div>
+              <h3>建物や立体スキャンした新体験の創出（スマホ）</h3>
+              <p>建物を含めた空間全体をVPS技術を活用して立体的に認識し、マンションにクジラ（バーチャルな情報）が本当に飲み込まれていくような体験を実現。リアルかバーチャルかの境目をなくす次世代の技術を新規事業へと提供します。</p>
+              <img src="images/consulting/play.svg">
+            </a>
+            <a class="solution-card" target="_blank" href="https://www.youtube.com/watch?v=ZCmo9XM2h58">
+              <div class="solution-thumbnail st3"></div>
+              <h3>音に合わせてスキャンした空間を変化させるMRグラスアプリ</h3>
+              <p>MRグラス「Magic Leap 1」で体験できる空間音響アプリケーション。MRグラスを装着してアプリを起動すると、音に合わせて空間が変化するという新体験を味わえます。リリース直後から話題となり様々なメディアに掲載されました。</p>
+              <img src="images/consulting/play.svg">
+            </a>
+            <a class="solution-card" target="_blank" href="https://www.youtube.com/watch?v=7bl-9ZPgUDM">
+              <div class="solution-thumbnail sub st4"></div>
+              <h3>屋内空間をダイナミックに活用したMRグラスアプリ</h3>
+              <p>MRグラス「Magic Leap 1」でMR（複合現実）技術を活用した空間アプリケーション。Magic Leap 1を通して見る視界上に映像を重ね、まるで天井からピザが降ってくるようなギミックを再現しています。ストアにて公開中。</p>
+              <img src="images/consulting/play.svg">
+            </a>
+            <a class="solution-card" target="_blank" href="https://www.youtube.com/watch?v=o6Rq446NOgA">
+              <div class="solution-thumbnail sub st5"></div>
+              <h3>空間にデジタル付箋を貼り付けて保存するMRグラスアプリ</h3>
+              <p>MRグラス「Magic Leap 1」でMR（複合現実）で空間内のあらゆる所に付箋を貼り付けるアプリケーション。音声からテキストを作成し付箋を貼り付けることも可能です。（当アプリはテキストと音声共に英語のみサポートしております。）ストアにて公開中。</p>
+              <img src="images/consulting/play.svg">
+            </a>
+            <a class="solution-card" target="_blank" href="https://www.youtube.com/watch?v=J92Mc4h_FmE">
+              <div class="solution-thumbnail sub st6"></div>
+              <h3>姿を消したゴーストを退治するMRグラスアプリ</h3>
+              <p>完全に姿を消したゴーストを懐中電灯を使い、ゴーストを見つけて退治していくアプリケーション。MRグラス「Magic Leap 1」によるMR（複合現実）のテクノロジーのひとつSpatial Audio（空間オーディオ）を使用することで、ゴーストのいる場所から声が聴こえてきます。ストアにて公開中。</p>
+              <img src="images/consulting/play.svg">
+            </a>
+            <a class="solution-card" target="_blank" href="https://www.youtube.com/watch?v=VSexUozTUyE">
+              <div class="solution-thumbnail sub st7"></div>
+              <h3>お絵描き感覚で簡単な3Dモデリングを体験できるMRグラスアプリ</h3>
+              <p>コントローラーで引いた線から自動的に3Dモデルが作成。「Magic Leap 1」によるMR（複合現実）デバイスを被り、空間をキャンバスにして3Dモデルを作成。作成した3DモデルはWeb上に公開することもできます。</p>
+              <img src="images/consulting/play.svg">
+            </a>
+          </section>
+          <section id="blog" class="section blog">
+            <h2>技術ブログ</h2>
+            <p class="section-desc">最先端のXRおよび空間コンピューティング技術を日夜研究しています。
+            </p>
+            <div class="blog-wrapper">
+              <a class="blog-card" target="_blank" href="https://note.com/st_one/n/n783c3eed8d0a?magazine_key=m25ceb06130d0">
+                <img src="images/consulting/blog13.png">
+                <p>Niantic Lightship ARDK のメッシュ機能を使用する</p>
+              </a>
+              <a class="blog-card" target="_blank" href="https://note.com/st_one/n/neee672b605ec?magazine_key=m25ceb06130d0">
+                <img src="images/consulting/blog12.png" height="160">
+                <p>Niantic Lightship ARDK の画像検出機能を使用する </p>
+              </a>
+              <a class="blog-card" target="_blank" href="https://note.com/st_one/n/n7c15e6290068?magazine_key=m25ceb06130d0">
+                <img src="images/consulting/blog11.png">
+                <p>Niantic Lightship ARDK セマンティック セグメンテーションを使って空に映像を映し出す方法</p>
+              </a>
+              <div class="clear"></div>
+              <a class="readmore btn-secondary" target="_blank" href="https://note.com/oneplanetinc/m/m25ceb06130d0">もっと見る</a>
+            </div>
+          </section>
+          <section id="process" class="section process">
+            <h2>ご相談〜リリースまでの流れ</h2>
+            <img class="pc" src="images/consulting/process.png">
+            <img class="sp" src="images/consulting/processsp.png">
+          </section>
+          <section id="contact" class="section contact">
+            <form id="op_form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+              <h2>お問い合わせ</h2>
+              <div class="form-wrapper">
+              <input type=hidden name='captcha_settings' value='{"keyname":"recapchaVer2","fallback":"true","orgId":"00D5h000000IiDd","ts":""}'>
+                <input type=hidden name="oid" value="00D5h000000IiDd">
+                <input type=hidden name="retURL" value="https://1planet.co.jp/thanks.html">
+                <!--  ----------------------------------------------------------------------  -->
+                <!--  注意: これらの項目は、省略可能なデバッグ用要素です。デバッグモードでテストを行う場合は、これらの行をコメント解除してください。        -->
+                <!--  <input type="hidden" name="debug" value=1>                              -->
+                <!--  <input type="hidden" name="debugEmail"                                  -->
+                <!--  value="shinjisogawa@gmail.com">                                         -->
+                <!--  ----------------------------------------------------------------------  -->
+
+                <input id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="お名前" />
+                <input id="company" maxlength="80" name="company" size="20" type="text" placeholder="会社名" />
+                <input id="email" maxlength="80" name="email" size="20" type="text" placeholder="メールアドレス" />
+                <textarea id="description" type="text" name="description" rows="8"  placeholder="ARの企画・開発に関するご相談はこちらからお願いいたします。その他、株式会社OnePlanetへご質問・ご要望がございましたら、お気軽にご連絡ください。"></textarea>
+
+                <input type="hidden" name="lead_source" value="CorporateSite"/>
+                <input type="hidden" name="Campaign_ID" value="7015h000000xF3aAAE" />
+                <input type="hidden" name="member_status" value="Responded" />
+
+                <p class="checkbox">
+                  <input type="checkbox" id="agreed" name="checked" text="abc" />
+                  <label for="agreed">ご提供頂く<a href="policy.html" target="_blank">個人情報の取り扱い方針</a>に同意する</label>
+                </p>
+                <br>
+                <div id="recapture">
+                  <div class="g-recaptcha" data-sitekey="6LcL9xIaAAAAACMVvZZc4fRuJWoZ6ZGCI5qCmQwJ"></div>
+                </div>
+                <br>
+                <input id="submit" type="submit" name="submit" class="btn form-button" value="送信する">
+                </div>
+              </form>
+          </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="op_footer">
+          <p class="op_copyright">© <span class="js_year">2020</span> <a href="index.html" target="_blank">OnePlanet Inc.</a> All rights reserved.</p>
+          <a class="op_pp" href="policy.html">Privacy Policy</a>
+        </footer>
+
+        <script type="text/javascript">
+        	function clearcall(code) {
+        		if(code !== ""){
+        			$(':submit[name=button]').removeAttr("disabled");
+        		}
+        	}
+        </script>
+    </body>
+</html>

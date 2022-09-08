@@ -1,0 +1,471 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="author" content="MoQ">
+    <meta name="keywords" content="Oneplanet, OnePlanet, AR, Augument Reality, Spark Studio">
+    <meta name="description" content="OnePlanetは、AR技術を活用した様々なソリューションを提供するテクノロジースタートアップ企業です。ARグラスを活用した新しいカスタマーエクスペリエンスの開発や、自宅でも展示会を行えるようにするAR体験、スタッフのオペレーション負荷を抑えたストアへのAR導入、InstagramのARエフェクト開発など、ARを活用した様々なサービス/DXソリューションを展開しています。創業以来、幅広い業界のクライアントへARサービスを展開しており、ARを活用したあらゆる課題解決のためにプロジェクトの企画からARの開発・導入までをワンストップで提供しています">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <title>OnePlanet: ARテクノロジーで次の時代の感動体験を創る</title>
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="OnePlanet: ARテクノロジーで次の時代の感動体験を創る" />
+    <meta property="og:image" content="https://1planet.co.jp/ogp.png" />
+    <meta property="og:url" content="https://1planet.co.jp/" />
+    <meta property="og:site_name" content="株式会社OnePlanet" />
+    <meta property="og:description" content="OnePlanetは、AR技術を活用した様々なソリューションを提供するテクノロジースタートアップ企業です。ARグラスを活用した新しいカスタマーエクスペリエンスの開発や、自宅でも展示会を行えるようにするAR体験、スタッフのオペレーション負荷を抑えたストアへのAR導入、InstagramのARエフェクト開発など、ARを活用した様々なサービス/DXソリューションを展開しています。創業以来、幅広い業界のクライアントへARサービスを展開しており、ARを活用したあらゆる課題解決のためにプロジェクトの企画からARの開発・導入までをワンストップで提供しています" />
+
+    <link rel="icon" href="images/icon.png">
+    <link rel="apple-touch-icon" href="images/icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icon.png">
+
+    <link href="/stylesheets/reset.css" rel="stylesheet" />
+    <link href="/stylesheets/style.css" rel="stylesheet" />
+    <link href="/stylesheets/kv.css" rel="stylesheet" />
+    <link href="/stylesheets/page.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/54d417cb89.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+     function timestamp() {
+        var response = document.getElementById("g-recaptcha-response");
+        if (response == null || response.value.trim() == "") {
+            var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);
+            elems["ts"] = JSON.stringify(new Date().getTime());
+            document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems);
+        }
+        } setInterval(timestamp, 500);
+
+     function callValidation() {
+
+     }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124333635-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-124333635-1');
+    </script>
+
+    <script src="/javascripts/jquery-3.2.1.min.js"></script>
+    <script src="/javascripts/particles.min.js"></script>
+    <script src="/javascripts/scrollspy.js"></script>
+    <script src="/javascripts/main.js"></script>
+  </head>
+  <body>
+    <div class="opening-stroke">
+    <svg width="603" height="72" viewBox="0 0 603 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M66.3427 15.1383C71.6762 7.63398 74.1468 2.16495 72.491 0.509059C70.8351 -1.14683 65.366 1.32385 57.8617 6.65731C51.9763 2.46546 44.7761 1.05146e-05 37 1.05146e-05C17.1177 1.05146e-05 1 16.1178 1 36C1 43.7761 3.46545 50.9764 7.6573 56.8617C2.32385 64.366 -0.146816 69.8351 1.50907 71.4909C3.16496 73.1468 8.63398 70.6762 16.1383 65.3427C22.0237 69.5346 29.2239 72 37 72C56.8823 72 73 55.8823 73 36C73 28.2239 70.5346 21.0237 66.3427 15.1383ZM66.3427 15.1383C61.0057 22.6475 52.8022 32.1947 42.9985 41.9985C33.1947 51.8022 23.6475 60.0057 16.1383 65.3427C12.861 63.0085 9.99152 60.139 7.6573 56.8617C12.9943 49.3525 21.1978 39.8053 31.0015 30.0015C40.8053 20.1978 50.3525 11.9943 57.8617 6.65731C61.139 8.99152 64.0085 11.8611 66.3427 15.1383Z" fill="black"/>
+        <path d="M128.3 72L99.8 25.7H99.5L99.9 72H83.3V1.2H102.8L131.2 47.4H131.5L131.1 1.2H147.7V72H128.3Z" fill="black"/>
+        <path d="M162.304 72V1.2H209.904V15.7H178.804V29H208.204V42.7H178.804V57.4H211.704V72H162.304Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M274.446 33.4999C275.979 30.6333 276.746 27.1333 276.746 23C276.746 18.9333 276.013 15.5333 274.546 12.8C273.146 9.99995 271.179 7.76662 268.646 6.09995C266.179 4.36661 263.246 3.13328 259.846 2.39995C256.513 1.59995 252.913 1.19995 249.046 1.19995H223.046V72H240.146V45.2999H248.646C252.313 45.2999 255.846 44.9 259.246 44.1C262.646 43.3 265.646 42.0333 268.246 40.3C270.846 38.5666 272.913 36.2999 274.446 33.4999ZM258.646 18.9999C259.313 20.0666 259.646 21.4333 259.646 23.1C259.646 24.7666 259.313 26.1666 258.646 27.2999C257.979 28.3666 257.046 29.2333 255.846 29.9C254.713 30.5666 253.413 31.0333 251.946 31.3C250.479 31.5666 248.946 31.6999 247.346 31.6999H240.146V14.9999H247.646C249.179 14.9999 250.646 15.0999 252.046 15.2999C253.513 15.4999 254.813 15.9 255.946 16.5C257.079 17.1 257.979 17.9333 258.646 18.9999Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M287.011 1.19995V72H349.548L354.748 58.1H382.148L387.648 72H406.648L377.248 1.19995H360.648L331.611 70.4188V57.1H304.211V1.19995H287.011ZM368.648 20.0999L359.648 44.3999H377.448L368.648 20.0999Z" fill="black"/>
+        <path d="M428.999 25.6999L457.499 72H476.899V1.19995H460.299L460.699 47.4H460.399L431.999 1.19995H412.499V72H429.099L428.699 25.6999H428.999Z" fill="black"/>
+        <path d="M491.503 72V1.19995H539.103V15.6999H508.003V29H537.403V42.7H508.003V57.4H540.903V72H491.503Z" fill="black"/>
+        <path d="M582.545 72V15.7999H602.545V1.19995H545.445V15.7999H565.445V72H582.545Z" fill="black"/>
+    </svg>
+</div>
+
+<!--HEADER-->
+<header class="header out">
+    <h1>OnePlanet ワンプラネット</h1>
+    <ul class="nav">
+        <li class="active" data-scrollTarget="#top"><a href="#top" style="color:black">TOP</a></li>
+        <li class="" data-scrollTarget="#news"><a href="#news" style="color:black">NEWS</a></li>
+        <li class="" data-scrollTarget="#service"><a href="#service" style="color:black">SERVICE</a></li>
+        <li class="" data-scrollTarget="#works"><a href="#works" style="color:black">WORKS</a></li>
+        <li class="" data-scrollTarget="#team"><a href="#team" style="color:black">TEAM</a></li>
+        <li class="" data-scrollTarget="#company"><a href="#company" style="color:black">COMPANY</a></li>
+        <li class="contact" data-scrollTarget="#contact"><a href="#contact">CONTACT</a></li>
+    </ul>
+</header>
+<div class="sns out">
+  <a class="twitter" href="https://twitter.com/Oneplanet_AR" target="_blank">
+    <img src="images/twitter.svg">
+  </a>
+  <a class="instagram" href="https://www.instagram.com/sparkstudio_jp/" target="_blank">
+    <img src="images/instagram.svg">
+  </a>
+</div>
+<header class="sp_header">
+    <img class="sp_logo" src="images/logo.svg">
+    <div class="sp_menu">
+        <span class="sp_bar sp_bar1"></span>
+        <span class="sp_bar sp_bar2"></span>
+        <span class="sp_bar sp_bar3"></span>
+    </div>
+</header>
+<ul class="sp_nav">
+    <li><a hret="#top">TOP</a></li>
+    <li><a hret="#news">NEWS</a></li>
+    <li><a hret="#service">SERVICE</a></li>
+    <li><a hret="#works">WORKS</a></li>
+    <li><a hret="#team">TEAM</a></li>
+    <li><a hret="#company">COMPANY</a></li>
+    <li><a hret="#contact">CONTACT</a></li>
+</ul>
+
+<!--KV-->
+<div class="section-kv" id="three-container">
+    <div class="kv">
+        <div class="kvbg close">
+          <div class="arc_inner"></div>
+          <div class="arc_outter"></div>
+          <div class="kv-outter"></div>
+          <div class="kv-inner"></div>
+          <div class="arrows"></div>
+        </div>
+
+    </div>
+</div>
+<div id="top" class="opening">
+    <img src="images/logo.svg">
+    <div class="tagline">ARテクノロジーで次の時代の感動体験を創る</div>
+    <div class="scroll-down"></div>
+</div>
+
+<div class="section-clients">
+
+</div>
+
+<!--NEWS-->
+<section id="news" class="section section-news">
+    <img class="seciton-title title-service" src="images/news.svg">
+    <div class="inner">
+            <a class="news-item" href="https://1planet.co.jp/works/dragonpet-ar.html" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+              <span class="news-label">2022/05/25 お知らせ</span>
+              5月24日からサンフランシスコで開催されるNiantic社のイベントで、OnePlanetのARアプリの動画が公開
+            </a>
+            <a class="news-item" href="https://prtimes.jp/main/html/rd/p/000000040.000049853.html" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+              <span class="news-label">2022/03/14 プレスリリース</span>
+              相鉄グループの相模鉄道が2022年3月21日（月・祝）から「春のそうにゃんARスタンプラリー」を開催！
+            </a>
+            <a class="news-item" href="https://www.wwdjapan.com/articles/1319607" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+              <span class="news-label">2022/02/10 メディア掲載</span>
+              WWD「メタバースがもたらす新しい世界と新しいビジネス」にOnePlanetのARが掲載されました。
+            </a>
+
+        <a class="list-more" href="news.html">もっと見る</a>
+    </div>
+</section>
+
+<!--SERVICE-->
+<section id="service" class="section section-service">
+    <img class="seciton-title title-service" src="images/title-service.svg">
+
+    <!--SPARK STUDIO-->
+    <div class="service-block sb-spark">
+        <div id="pjs"></div>
+        <img class="logo_spark" src="images/spark_logo.svg">
+        <h3><b>spark studio</b> はAR時代の新しい体験を創り出すARコンテンツスタジオです。 高度なAR技術を扱うエンジニアや3Dクリエイター、デジタルマーケターが結集。ARに特化してコンテンツの企画・開発からプロモーションまでを一気通貫でトータルプロデュースします。
+
+        <a class="op_action" href="https://studio.1planet.co.jp/" target="_blank">もっと見る</a>
+        </h3>
+
+    </div>
+
+    <!--CONSULTING-->
+    <div class="service-block sb-consulting">
+        <div class="title-consulting">
+            <img class="tc-up" src="images/tc_up.svg">
+            <!-- <img class="tc-down" src="images/tc_down.svg"> -->
+        </div>
+        <h3>
+
+          <b>AR技術を活用したDX推進/新規サービスの開発支援</b><br>
+          先端テクノロジーを掛け合わせて自社のアセットを有効活用したい企業様や、新しい消費者体験を導入したいストア事業者様/商業施設様等に向けて、AR技術やMRグラスを活用した新しいソリューションをご提供。PoC段階から一緒に企画を設計し、開発、テスト、ローンチおよび、その後の効果検証までをワンストップでご支援、貴社のイノベーションを推進いたします。
+
+        <a class="op_action" href="xrconsulting.html" target="_blank">もっと見る</a>
+        </h3>
+    </div>
+
+    <!--AR for Metaverse-->
+    <div class="service-block sb-postar">
+        <img class="logo_postar" src="images/logo_metaverse.png">
+        <h3>「AR for Metaverse」は、 メタバース時代に対応したい企業様やブランド様に最先端のAR技術を提供する、メタバース対応に特化したAR技術支援サービスです。
+          <a class="op_action" href="https://metaverse.1planet.co.jp/" target="_blank">もっと見る</a>
+        </h3>
+    </div>
+
+    <!--LocationAR-->
+    <div class="service-block sb-aml">
+        <img class="logo_aml" src="images/locationar_logo_white.png">
+        <h3><b>「LocationAR」</b>は、商業施設や店舗、イベント会場など、”特定の場所”に来場されたお客様に特別なAR体験を提供したい事業者様に向けて提供する
+場所限定の体験型ARコンテンツ制作ツールです。
+          <a class="op_action" href="https://locationar.1planet.co.jp/" target="_blank">もっと見る</a>
+        </h3>
+    </div>
+
+    <div class="clear">
+    </div>
+
+</section>
+
+<!-- WORKS -->
+<section id="works" class="section section-works">
+  <img class="seciton-title title-service" src="images/works.svg">
+
+    <div class="work">
+      <img class="work-art" src="//images.ctfassets.net/r0uqovrqk5qv/1u5W3RiKKW9ApBCPthDHB3/f362b2b2eae65b7ff0e4801aa191e51e/_________AR.png">
+      <div class="work-detail">
+        <div class="work-desc">
+          <h3>春華堂「SWEETS BANK」AR</h3>
+          <p>春華堂様</p>
+          <p>
+            浜松銘菓「うなぎパイ」で有名な春華堂様とコラボレーションしたARを、うなぎ“パイ”に掛けた8月1日にリリース致しました。...
+          </p>
+
+        </div>
+        <div class="work-action">
+          <a class="work-action_more" href="works/sweets-bank-ar.html">もっと見る</a>
+          <a class="work-action_cta js_scrollTo" data-scrolltarget="#contact">このようなARを作りたい！</a>
+        </div>
+      </div>
+    </div>
+    <div class="work">
+      <img class="work-art" src="//images.ctfassets.net/r0uqovrqk5qv/2EAtyiXCjgJx3gCGeLgCzU/419215312d541ba96a4016105744ef5a/____________________________2022-05-24_23.01.01__1_.png">
+      <div class="work-detail">
+        <div class="work-desc">
+          <h3>自社ARアプリ「DragonPet AR」</h3>
+          <p>OnePlanet</p>
+          <p>
+            2022年5月24日・25日に米国サンフランシスコで開催されたNiantic社のイベントにて、同社のAR開発ツールLig...
+          </p>
+
+        </div>
+        <div class="work-action">
+          <a class="work-action_more" href="works/dragonpet-ar.html">もっと見る</a>
+          <a class="work-action_cta js_scrollTo" data-scrolltarget="#contact">このようなARを作りたい！</a>
+        </div>
+      </div>
+    </div>
+    <div class="work">
+      <img class="work-art" src="//images.ctfassets.net/r0uqovrqk5qv/68nf4weV7vVYKPKkr7TvXa/f4789454ef6d12dfea78f1d911dd1663/____________________________2022-07-16_21.36.54.png">
+      <div class="work-detail">
+        <div class="work-desc">
+          <h3>相模鉄道「そうにゃんARスタンプラリー」</h3>
+          <p>相模鉄道</p>
+          <p>
+            ### 相鉄グループの相模鉄道が2022年3月21日（月・祝）から「春のそうにゃんARスタンプラリー」を開催！
+
+「春の...
+          </p>
+
+        </div>
+        <div class="work-action">
+          <a class="work-action_more" href="works/ar.html">もっと見る</a>
+          <a class="work-action_cta js_scrollTo" data-scrolltarget="#contact">このようなARを作りたい！</a>
+        </div>
+      </div>
+    </div>
+    <div class="work">
+      <img class="work-art" src="//images.ctfassets.net/r0uqovrqk5qv/31tW4lRz5DqFTZ0deLRyTI/64d24f6be0ee0b1e0fd709b5c3f45fbf/xxxxth.png">
+      <div class="work-detail">
+        <div class="work-desc">
+          <h3>デジタルファッションブランド「XXXXTH」のARを開発</h3>
+          <p>XXXXTH（フォックス）</p>
+          <p>
+            デジタルファッションブランド「XXXXTH（フォックス）」は、AR技術を提供する株式会社OnePlanetのサービス「A...
+          </p>
+
+        </div>
+        <div class="work-action">
+          <a class="work-action_more" href="works/ar-for-metaverse-xxxxth.html">もっと見る</a>
+          <a class="work-action_cta js_scrollTo" data-scrolltarget="#contact">このようなARを作りたい！</a>
+        </div>
+      </div>
+    </div>
+    <div class="work">
+      <img class="work-art" src="//images.ctfassets.net/r0uqovrqk5qv/2mTByoFhM3OzfAH1dUjZKw/e40d090694de5a292cb34876fdb6d5ab/billabong.jpeg">
+      <div class="work-detail">
+        <div class="work-desc">
+          <h3>世界的サーフィンブランド「BILLABONG(ビラボン)」のARを制作</h3>
+          <p>ボードライダーズ ジャパン様</p>
+          <p>
+            ARサービスを提供する株式会社OnePlanet(以下、OnePlanet)は、世界的サーフィンブランド「BILLABO...
+          </p>
+
+        </div>
+        <div class="work-action">
+          <a class="work-action_more" href="works/billabong-ar.html">もっと見る</a>
+          <a class="work-action_cta js_scrollTo" data-scrolltarget="#contact">このようなARを作りたい！</a>
+        </div>
+      </div>
+    </div>
+    <div class="work">
+      <img class="work-art" src="//images.ctfassets.net/r0uqovrqk5qv/2I7Zro4PMkW1Hw5VUB9a2C/913e09ca52c2a582136a8468c73ce00d/____________.png">
+      <div class="work-detail">
+        <div class="work-desc">
+          <h3>三重県 四日市市のInstgram ARフィルターを制作</h3>
+          <p>三重県四日市市様</p>
+          <p>
+            三重県 四日市市のシティプロモーションとして、マスコットキャラクター「こにゅうどうくん」のInstgram ARフィルタ...
+          </p>
+
+        </div>
+        <div class="work-action">
+          <a class="work-action_more" href="works/instgram-ar.html">もっと見る</a>
+          <a class="work-action_cta js_scrollTo" data-scrolltarget="#contact">このようなARを作りたい！</a>
+        </div>
+      </div>
+    </div>
+
+  <div class="clear">
+  </div>
+
+  <a class="list-more" href="works.html">もっと見る</a>
+
+</section>
+
+<!-- TEAM -->
+<section id="team" class="section section-team">
+  <img class="seciton-title title-service" src="images/team.svg">
+  <ul class="ul-team">
+    <li class="team-murakami">
+      <div class="team-detail">
+        <p class="team-intro" href="#">
+          <img class="logomark-small" src="images/logomark_small.svg">
+          <br>
+          2010年、立教大卒。新卒で不動産デベロッパー勤務を経て、2013年に株式会社ビズリーチに中途入社。人事部や新規事業の立ち上げに従事した後、2018年に株式会社OnePlanetを設立。AR技術に特化したスタートアップとして様々な業界の企業へのAR導入を実現する傍ら、XRとメタバースやブロックチェーンが繋がった未来を構想し、自社プロダクト開発やパートナーとの実験的プロジェクトにも積極的に取り組む。
+        </p>
+        <div class="team-overlay"></div>
+        <div class="team-border"></div>
+      </div>
+      <div class="team-name">
+        Murakami Tomohiko
+        <br>
+        <span class="team-title">CEO</span>
+      </div>
+    </li>
+    <li class="team-ivan">
+      <div class="team-detail">
+        <p class="team-intro" href="#">
+          <img class="logomark-small" src="images/logomark_small.svg">
+          <br>
+          インドネシア出身。大学在学中から、複数スタートアップの立ち上げに参画。多数サービスの立ち上げに携わり、フルスタックエンジニアとして経験を積む。2018年「THE Global Mobile Games Conference」ブロックチェーンゲーム部門で世界2位受賞。2019年、株式会社OnePlanetに参画。
+        </p>
+        <div class="team-overlay"></div>
+        <div class="team-border"></div>
+      </div>
+      <div class="team-name">
+        Ivan Stephanus
+        <br>
+        <span class="team-title">XR Engineer</span>
+      </div>
+    </li>
+    <li class="team-tokuyama">
+      <div class="team-detail">
+        <p class="team-intro" href="#">
+          <img class="logomark-small" src="images/logomark_small.svg">
+          <br>
+          SIerとして16年間、金融や飲料系など様々な業務プロジェクトに参画した後、2020年に株式会社OnePlanetに入社。前職ではエンタープライズ向けWebアプリケーション開発を経験しながら、拡張現実（AR)/複合現実（MR）テクノロジーを 使った開発プロジェクトにも参画。OnePlanetではARアプリケーションの開発を担当。個人で空間コンピューティングデバイス、Magic Leapの開発やコミュニティ活動なども行っている。
+        </p>
+        <div class="team-overlay"></div>
+        <div class="team-border"></div>
+      </div>
+      <div class="team-name">
+        Sadao Tokuyama
+        <br>
+        <span class="team-title">XR Engineer</span>
+      </div>
+    </li>
+    <li class="team-dustman">
+      <div class="team-detail">
+        <p class="team-intro" href="#">
+          <img class="logomark-small" src="images/logomark_small.svg">
+          <br>
+          TV/WebCMを主にエフェクト、モーショングラフィックスを担当。色々な映像の作り方を伝えるYouTubeチャンネル【ダストマンTips（登録者7.2万人）】を運営。OnePlanetでは主にARコンテンツのビジュアルデザインを担当している。
+        </p>
+        <div class="team-overlay"></div>
+        <div class="team-border"></div>
+      </div>
+      <div class="team-name">
+        DUSTMAN
+        <br>
+        <span class="team-title">Visual Effects Artist</span>
+      </div>
+    </li>
+  </ul>
+  <div class="clear team-joinus">
+      <img class="joinus-mark" src="images/joinus.svg">
+  </div>
+</section>
+
+<!-- COMPANY -->
+<section id="company" class="section section-company">
+  <div class="inner">
+    <img class="title-company" src="images/company.svg">
+    <ul class="ul-company">
+        <li><span>社名</span>株式会社OnePlanet</li>
+        <li><span>代表</span>村上 智彦</li>
+        <li><span>設立</span>2018年6月15日</li>
+        <li><span>拠点</span>東京都渋谷区</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section section-contact">
+  <div class="inner">
+    <img class="title-contact" src="images/contact.png">
+    <form id="op_form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+      <h2>お問い合わせ</h2>
+
+      <input type=hidden name='captcha_settings' value='{"keyname":"recapchaVer2","fallback":"true","orgId":"00D5h000000IiDd","ts":""}'>
+      <input type=hidden name="oid" value="00D5h000000IiDd">
+      <input type=hidden name="retURL" value="https://1planet.co.jp/thanks.html">
+      <!--  ----------------------------------------------------------------------  -->
+      <!--  注意: これらの項目は、省略可能なデバッグ用要素です。デバッグモードでテストを行う場合は、これらの行をコメント解除してください。        -->
+      <!--  <input type="hidden" name="debug" value=1>                              -->
+      <!--  <input type="hidden" name="debugEmail"                                  -->
+      <!--  value="shinjisogawa@gmail.com">                                         -->
+      <!--  ----------------------------------------------------------------------  -->
+
+      <input id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="お名前" />
+      <input id="company_name" maxlength="80" name="company" size="20" type="text" placeholder="会社名" />
+      <input id="email" maxlength="80" name="email" size="20" type="text" placeholder="メールアドレス" />
+      <textarea id="description" type="text" name="description" rows="8"  placeholder="ARの企画・開発に関するご相談はこちらからお願いいたします。その他、株式会社OnePlanetへご質問・ご要望がございましたら、お気軽にご連絡ください。"></textarea>
+
+      <input type="hidden" name="lead_source" value="CorporateSite"/>
+      <input type="hidden" name="Campaign_ID" value="7015h000000xF3aAAE" />
+      <input type="hidden" name="member_status" value="Responded" />
+
+      <p class="checkbox">
+        <input type="checkbox" id="agreed" name="checked" text="abc" />
+        <label for="agreed">ご提供頂く<a href="policy.html" target="_blank">個人情報の取り扱い方針</a>に同意する</label>
+      </p>
+      <br>
+      <div id="recapture">
+        <div class="g-recaptcha" data-sitekey="6LcL9xIaAAAAACMVvZZc4fRuJWoZ6ZGCI5qCmQwJ"></div>
+      </div>
+      <br>
+      <input id="submit" type="submit" name="submit" class="form-button" value="送信する">
+    </form>
+  </div>
+</section>
+
+<script type="text/javascript">
+	function clearcall(code) {
+		if(code !== ""){
+			$(':submit[name=button]').removeAttr("disabled");
+		}
+	}
+</script>
+
+    <!-- FOOTER -->
+    <footer class="op_footer">
+        <p class="op_copyright">© <span class="js_year">2020</span> OnePlanet Inc. All rights reserved.</p>
+        <a class="op_pp" href="policy.html">Privacy Policy</a>
+    </footer>
+  </body>
+</html>
