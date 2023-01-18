@@ -175,7 +175,8 @@ kv.css
 ---*/
 .section {
   padding-top: 120px;
-  margin-top: 80px; }
+  margin-top: 80px;
+  width: 100vw; }
 
 .clear {
   clear: both; }
@@ -565,7 +566,8 @@ kv.css
   mix-blend-mode: color; }
 
 #works {
-  text-align: center; }
+  text-align: center;
+  width: 100vw; }
 
 .work {
   position: relative;
