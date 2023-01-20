@@ -186,6 +186,10 @@ kv.css
   width: 960px;
   margin: 0 auto; }
 
+.works-inner {
+  position: relative;
+  width: 960px; }
+
 .section {
   position: relative;
   z-index: 100; }
